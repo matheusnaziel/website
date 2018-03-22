@@ -3,11 +3,12 @@ font-family: 'Aladin', cursive;
 font-family: 'Lily Script One', cursive;*/
 .bg-wrapper {
   background: url(../images/workstation-2.jpg);
-  background-position: top;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  background-attachment: fixed; }
 
 .cbp-spmenu {
   position: absolute;
@@ -144,9 +145,7 @@ h1 {
 
 .bg-color {
   background: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  width: 100%;
-  height: 100%; }
+  min-height: 100%; }
 
 .about-content {
   display: flex;
@@ -156,7 +155,6 @@ h1 {
   height: 100%; }
 
 .bg-about {
-  /*background: url(../images/workstation.jpg);*/
   background-color: white;
   background-position: center;
   background-repeat: no-repeat;
@@ -165,7 +163,6 @@ h1 {
 .about-content-title {
   font-weight: 600;
   font-size: 25px;
-  padding: 25px;
   color: #000;
   margin-top: 30px;
   font-family: 'Anonymous Pro', monospace; }
@@ -202,7 +199,8 @@ h1 {
   width: 100%;
   position: relative;
   float: left;
-  margin-top: 25px; }
+  margin-top: 25px;
+  margin-bottom: 25px; }
 
 .skills ul {
   list-style: none;
@@ -309,6 +307,7 @@ h1 {
   color: #fff;
   display: flex;
   align-items: center;
+  text-align: center;
   justify-content: center;
   flex-direction: column;
   font-family: 'Anonymous Pro', monospace; }
@@ -332,6 +331,7 @@ h1 {
   justify-content: center; }
 
 .form {
+  width: 100%;
   margin-bottom: 40px; }
 
 .name input {
