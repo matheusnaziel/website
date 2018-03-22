@@ -3,11 +3,12 @@ font-family: 'Aladin', cursive;
 font-family: 'Lily Script One', cursive;*/
 .bg-wrapper {
   background: url(../images/workstation-2.jpg);
-  background-position: top;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  background-attachment: fixed; }
 
 .cbp-spmenu {
   position: absolute;
@@ -306,9 +307,9 @@ h1 {
   color: #fff;
   display: flex;
   align-items: center;
+  text-align: center;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
   font-family: 'Anonymous Pro', monospace; }
 
 .frase-wrapper-text-p {
@@ -330,8 +331,8 @@ h1 {
   justify-content: center; }
 
 .form {
-  margin-bottom: 40px;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 40px; }
 
 .name input {
   width: 100%;
