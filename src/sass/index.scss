@@ -4,11 +4,12 @@ font-family: 'Lily Script One', cursive;*/
 
 .bg-wrapper {
 	background: url(../images/workstation-2.jpg);
-	background-position: top;
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
 	height: 100vh;
+	background-attachment: fixed;
 }
 
 .cbp-spmenu {
