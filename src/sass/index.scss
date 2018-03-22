@@ -241,7 +241,7 @@ h1 {
 	position: relative;
 	float: left;
 	margin-top: 25px;
-
+	margin-bottom: 25px;
 }
 .skills ul{
 	list-style: none;
@@ -390,6 +390,7 @@ h1 {
 	color: #fff;
 	display: flex;
 	align-items: center;
+	text-align: center;
 	justify-content: center;
 	flex-direction: column;
 	font-family: 'Anonymous Pro', monospace;
@@ -419,6 +420,7 @@ h1 {
 
 .form {
 	margin-bottom: 40px;
+	width: 100%;
 }
 
 .name input{
