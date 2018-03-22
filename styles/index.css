@@ -198,7 +198,8 @@ h1 {
   width: 100%;
   position: relative;
   float: left;
-  margin-top: 25px; }
+  margin-top: 25px;
+  margin-bottom: 25px; }
 
 .skills ul {
   list-style: none;
@@ -307,6 +308,7 @@ h1 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
   font-family: 'Anonymous Pro', monospace; }
 
 .frase-wrapper-text-p {
@@ -328,7 +330,8 @@ h1 {
   justify-content: center; }
 
 .form {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  width: 100%; }
 
 .name input {
   width: 100%;
