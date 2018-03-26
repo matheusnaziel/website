@@ -12,7 +12,7 @@ gulp.task('connect', function() {
 });
 
 gulp.task('html', function() {
-	return gulp.src('./src/index.html')
+	return gulp.src('./src/*.html')
 	.pipe(gulp.dest('./dist/'))
 	.pipe(connect.reload());
 });
