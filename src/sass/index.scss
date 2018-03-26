@@ -13,7 +13,7 @@ font-family: 'Lily Script One', cursive;*/
 }
 
 .cbp-spmenu {
-	position: absolute;
+	position: fixed;
 	background: white;
 }
 
@@ -56,10 +56,6 @@ font-family: 'Lily Script One', cursive;*/
 	-moz-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
-/*
-.col {
-	border: 1px solid red;
-}*/
 
 .header-wrapper {
 	position: relative;
@@ -67,11 +63,13 @@ font-family: 'Lily Script One', cursive;*/
 	display: flex;
 	flex-direction: column;
 }
+.fixed{
+	position: fixed;
+}
 
 .header-bar {
-	position: absolute;
 	width: 100%;
-	height: 100%;
+	height: 56px;
 	display: flex;
 	align-items: center;
 	background-color: white;
@@ -203,14 +201,31 @@ h1 {
 .about-content-img {
 	display: flex;
 	justify-content: center;
-	padding: 30px;
+	position: relative;
+	height: 240px;
+}
+
+.about-content-foto {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    height: 220px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-content-img img{
-	padding: 5px;
-	border-radius: 5%;
-	margin-bottom: 20px;
- 	filter: grayscale(100%);	
+	filter: grayscale(100%);
+    position: absolute;
+    top: 13px;
 }
 
 .about-content-text {
@@ -336,7 +351,7 @@ h1 {
 	}	
 
 	.form {
-		width: 60%;
+		width: 60% !important;
 	}
 
 }
