@@ -7,8 +7,8 @@
 	<meta charset="UTF-8">
 	<title>Matheus</title>
 	
-	<link rel="stylesheet" href="/styles/bootstrap.min.css">
-	<link rel="stylesheet" href="/styles/index.css">
+	<link rel="stylesheet" href="./styles/bootstrap.min.css">
+	<link rel="stylesheet" href="./styles/index.css">
 	<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Aladin|Fredericka+the+Great|Lily+Script+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -19,28 +19,29 @@
 			<div class="header-bar">
 				<div class="container">
 					<div class="header-bar-content">
-						<h1>Naziel</h1>
+						<h1 class="logo-sm">Naziel</h1>
 						<i id="showTop" class="button-menu material-icons">menu</i>
+						<nav class="nav-desktop">
+							<ul class="nav-desktop-ul">
+								<li><a href="#nav0" class="home">Home</a></li>
+								<li><a href="#nav1" class="about" href="#">About me</a></li>
+								<li><a href="#nav2" class="contact">Contact</a></li>
+							</ul>
+						</nav>
 					</div>
 				</div>
 			</div>
 			<nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-top" id="cbp-spmenu-s3">
 				<ul class="navbar-wrapper">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About me</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a class="home" href="#">Home</a></li>
+					<li><a class="about" href="#">About me</a></li>
+					<li><a class="contact" href="#">Contact</a></li>
 				</ul>
 			</nav>
-			<nav class="nav-desktop">
-				<ul class="nav-desktop-ul">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About me</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
+			
 		</header>
 	</section>
-
+ 
 	<section class="section-main-wrapper">	
 		<div class="bg-wrapper">
 			<div class="bg-color">
@@ -49,12 +50,12 @@
 						<div class="main-wrapper">
 							<div class="main-content">
 								<div class="main-content-text">
-									<p>Hey there, I'm Matheus and i code</p>
-									<p>Clean code User-centered front-end code. <i class="material-icons" id="code">code</i></p>
+									<p>Olá, Eu sou Matheus e sou desenvolvedor.</p>
+									<p>Código limpo e marcação semântica<i class="material-icons" id="code">code</i></p>
 								</div>
 								<div class="section-wrapper-text">
 
-									<p>Working with startups and companies to design clean interfaces and goal-oriented interactions for theirs users.Feel free to email me if you think we should be working together on interesting projects.</p>
+									<p>Trabalhei como freelancer para uma empresa em 2017 e codifico algumas coisas para estudar e treinar minhas habilidades, você pode ver no meu Github. Sinta-se à vontade para me enviar um email se achar que deveríamos trabalhar juntos em projetos interessantes.</p>
 									
 								</div>
 							</div>
@@ -76,7 +77,7 @@
 							<div class="row">
 								<div class="col col-md-12">
 									<div class="about-content-title">
-										<h4>A Little Story About Me!</h4>
+										<h4>Um pouco sobre mim!</h4>
 									</div>
 								</div>
 							</div>
@@ -84,13 +85,15 @@
 							<div class="about-content-break">
 								<div class="row">
 									
-									<div class="col-12 col-md-2">
+									<div class="col-12 col-md-3">
 										<div class="about-content-img">
-											<img src="images/3x4.png" alt="foto naziel">
+											<div class="about-content-foto">
+												<img src="images/3x4.png" alt="foto naziel">
+											</div>
 										</div>
 									</div>	
 								
-									<div class="col-12 col-md-10">
+									<div class="col-12 col-md-9">
 										<div class="about-content-text">
 											<p>Meu nome é Matheus Naziel, nasci no Rio de Janeiro tenho 25 anos, sempre tive curiosidade na área de computação por gostar de jogos online desde criança, e consertar o próprio computador, até fazer um curso de montagem e manutenção e consertar o computador de amigos e terceiros, cursei técnico em Automação Industrial, trabalhei por um tempo na área mas voltei a estudar a área de Ti, por influência de um amigo há seis meses mergulhei nesse universo de desenvolvimento web. Meu principal foco hoje é me aprimorar em JavaScript/NodeJs, seus frameworks, libs e cursar Análise e Desenvolvimento de Sistemas.
 											</p>
@@ -175,8 +178,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<div class="contact-wrapper-text">
-						<h4>Contact</h4>
+					<div id="nav2" class="contact-wrapper-text">
+						<h4>Contato</h4>
 					</div>
 				</div>
 			</div>
@@ -184,12 +187,12 @@
 			<div class="row">
 				<div class="col">
 					<div id="form-main">
-						<form class="form">
-							<p class="name"><input type="text" name="name" placeholder="Name" id="name"></p>
-							<p class="email"><input type="text" name="email" placeholder="Email" id="email"></p>
-							<p class="message"><textarea name="text" id="comment" placeholder="Message"></textarea></p>
+						<form class="form" method="POST" action="https://simple-form.com/matheus.naziel@gmail.com">
+							<p class="name"><input type="text" name="name" placeholder="Seu nome" /></p>
+							<p class="email"><input type="email" name="replyTo" placeholder="Seu e-mail" /></p>
+							<p class="message"><textarea name="message" placeholder="Sua mensagem"></textarea></p>
 							<div class="submit">
-								<input class="button" type="submit" value="SEND" id="button-blue">
+								<input class="button" type="submit" value="Send" id="button-blue" />
 							</div>
 						</form>
 					</div>
