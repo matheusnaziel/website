@@ -12,7 +12,8 @@ font-family: 'Lily Script One', cursive;*/
 
 .cbp-spmenu {
   position: fixed;
-  background: white; }
+  background: white;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1); }
 
 .cbp-spmenu a {
   display: block;
@@ -62,7 +63,8 @@ font-family: 'Lily Script One', cursive;*/
   display: flex;
   align-items: center;
   background-color: white;
-  z-index: 9999; }
+  z-index: 9999;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1); }
 
 .header-bar-content {
   display: flex;
