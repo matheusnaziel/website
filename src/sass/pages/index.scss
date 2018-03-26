@@ -2,6 +2,8 @@
 font-family: 'Aladin', cursive;
 font-family: 'Lily Script One', cursive;*/
 
+@import '../common/iconfont.scss';
+
 .bg-wrapper {
 	background: url(../images/workstation-2.jpg);
 	background-position: center center;
@@ -502,7 +504,14 @@ h1 {
 .footer-text {
 	display: flex;
 	justify-content: center;
-	padding: 20px;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.footer-text a {
+	text-decoration: none;
+	color: #fff;
 }
 
 .footer-content {
@@ -515,4 +524,9 @@ h1 {
 
 .footer-content p{
 	margin: 0;
+	margin-bottom: 10px;
+}
+
+.footer-span .icon-github{
+	margin-right: 10px;
 }

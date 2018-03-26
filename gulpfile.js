@@ -18,14 +18,14 @@ gulp.task('html', function() {
 });
 
 gulp.task('sass', function() {
-	return gulp.src('./src/sass/index.scss')
+	return gulp.src('./src/sass/pages/*.scss')
 		.pipe(sass())
 		.pipe(gulp.dest('./dist/styles'))
 		.pipe(connect.reload());
 })
 
-gulp.task('css', function() {
-	return gulp.src('./src/css/*.css')
+gulp.task('vendors', function() {
+	return gulp.src('./src/sass/vendors/*.css')
 		.pipe(gulp.dest('./dist/styles'));
 })
 
@@ -40,10 +40,15 @@ gulp.task('images', function() {
 	.pipe(gulp.dest('./dist/images/'));
 });
 
+gulp.task('iconfont', function() {
+	return gulp.src('./src/iconfont/fonts/*.{eot,svg,ttf,woff}')
+	.pipe(gulp.dest('./dist/iconfont/'));
+});
+
 gulp.task('watch', function() {
 	gulp.watch(['./src/*.html'], ['html']);
-	gulp.watch(['./src/sass/*.scss'], ['sass']);
+	gulp.watch(['./src/sass/**/*.scss'], ['sass']);
 	gulp.watch(['./src/js/index.js'], ['js']);
 });
 
-gulp.task('default', ['html','js', 'sass', 'css', 'images', 'connect', 'watch']);
+gulp.task('default', ['html','js', 'sass', 'vendors', 'images', 'iconfont', 'connect', 'watch']);
