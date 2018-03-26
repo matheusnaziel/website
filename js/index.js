@@ -36,11 +36,10 @@ $(document).ready(function(){
 
 	// menu fixed
 	$(window).bind('scroll', function() {
-         if ($(window).scrollTop() > 150) {
+         if ($(window).scrollTop() > 250) {
              $('.header-bar').addClass('fixed');
          }
          else {
-             num = $('.menuFlotante').offset().top;
              $('.header-bar').removeClass('fixed');
          }
     });
