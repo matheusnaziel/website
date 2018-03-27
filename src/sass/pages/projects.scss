@@ -1,5 +1,9 @@
 @import '../common/iconfont.scss';
 
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
 .cbp-spmenu {
 	position: fixed;
 	background: white;
@@ -77,8 +81,8 @@
 	font-size: 25px
 }
 
-h1 {
-	font-family: 'Lily Script One', cursive;
+.text-projects {
+	font-family: 'Anonymous Pro', monospace;
 }
 
 .navbar-wrapper {
