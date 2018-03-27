@@ -30,6 +30,9 @@ font-family: 'Lily Script One', cursive;*/
 .footer-text .icon-github:before {
   font-size: 20px; }
 
+body {
+  font-family: roboto; }
+
 .bg-wrapper {
   background: url(../images/workstation-2.jpg);
   background-position: center center;
