@@ -31,7 +31,7 @@ font-family: 'Lily Script One', cursive;*/
   font-size: 20px; }
 
 body {
-  font-family: roboto; }
+  font-family: 'Open Sans', sans-serif; }
 
 .bg-wrapper {
   background: url(../images/workstation-2.jpg);
@@ -170,10 +170,12 @@ body {
   cursor: pointer; }
 
 .contact {
-  color: #fff; }
+  color: #fff;
+  text-decoration: underline; }
 
 .link-gh {
-  color: #fff; }
+  color: #fff;
+  text-decoration: underline; }
 
 .main {
   display: flex;
@@ -209,7 +211,7 @@ body {
 
 .about-content-title {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 21px;
   color: #000;
   margin-top: 30px;
   font-family: 'Anonymous Pro', monospace; }
@@ -340,6 +342,10 @@ body {
   font-family: 'Anonymous Pro', monospace;
   font-size: 21px; }
 
+.section-wrapper-text {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 21px; }
+
 @media only screen and (max-width: 771px) {
   .section-wrapper-text {
     font-size: 14px;
@@ -387,7 +393,8 @@ body {
   align-items: center;
   justify-content: center;
   height: 100px;
-  font-family: 'Anonymous Pro', monospace; }
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 21px; }
 
 #form-main {
   display: flex;
