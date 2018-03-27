@@ -4,6 +4,10 @@ font-family: 'Lily Script One', cursive;*/
 
 @import '../common/iconfont.scss';
 
+body {
+	font-family: roboto;
+}
+
 .bg-wrapper {
 	background: url(../images/workstation-2.jpg);
 	background-position: center center;
