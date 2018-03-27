@@ -139,6 +139,11 @@ body {
 .button-menu {
   cursor: pointer; }
 
+.logo-sm {
+  font-family: 'Lily Script One', cursive;
+  text-decoration: none;
+  color: #000; }
+
 .logo-sm:hover {
   color: rgba(0, 0, 0, 0.1); }
 
