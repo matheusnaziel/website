@@ -100,8 +100,18 @@ font-family: 'Lily Script One', cursive;*/
 	width: 80%;
 }
 
-h1 {
+.logo-sm {
 	font-family: 'Lily Script One', cursive;
+	text-decoration: none;
+	color: #000;
+}
+
+.logo-sm:hover {
+	color: rgba(0,0,0,0.1);
+}
+
+.logo:hover {
+	text-decoration: none;
 }
 
 .navbar-wrapper {
@@ -115,7 +125,9 @@ h1 {
 	color: #000;
 }
 
-
+.code-icon {
+	margin-left: 10px;
+}
 .nav-desktop {
 	z-index: 9999;
     display: flex;
@@ -137,10 +149,6 @@ h1 {
 	margin-right: 20px;
 }
 
-.nav-desktop-ul li:hover{
-	border-bottom: 1px solid black;
-}
-
 .nav-desktop-ul li a{
 	text-decoration: none;
 	color: #000;
@@ -148,11 +156,20 @@ h1 {
 
 .nav-desktop-ul li a:hover {
 	text-decoration: none;
-	color: rgba(0,0,0,0.1)
+	color: rgba(0,0,0,0.1);
+	border-bottom: 1px solid black;
 }
 
 .button-menu {
 	cursor: pointer;
+}
+
+.contact {
+	color: #fff;
+}
+
+.link-gh {
+	color: #fff;
 }
 
 .main {
@@ -389,7 +406,7 @@ h1 {
 }
 
 .bg-frase-wrapper {
-	background: url(../images/workstation.jpg);
+	background: url(../images/camping.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
